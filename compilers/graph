@@ -1,0 +1,135 @@
+digraph {
+	node [height=0.1 shape=box]
+	edge [arrowsize=0.5]
+	node1 [label=Program]
+	node2 [label=Var]
+	node1 -> node2
+	node3 [label=Decl]
+	node2 -> node3
+	node4 [label="Type : real"]
+	node3 -> node4
+	node5 [label="Id : a1"]
+	node3 -> node5
+	node6 [label=Decl]
+	node2 -> node6
+	node7 [label="Type : real"]
+	node6 -> node7
+	node8 [label="Id : b1"]
+	node6 -> node8
+	node9 [label=Decl]
+	node2 -> node9
+	node10 [label="Type : real"]
+	node9 -> node10
+	node11 [label="Id : a2"]
+	node9 -> node11
+	node12 [label=Decl]
+	node2 -> node12
+	node13 [label="Type : real"]
+	node12 -> node13
+	node14 [label="Id : b2"]
+	node12 -> node14
+	node15 [label=Decl]
+	node2 -> node15
+	node16 [label="Type : real"]
+	node15 -> node16
+	node17 [label="Id : p1"]
+	node15 -> node17
+	node18 [label=Decl]
+	node2 -> node18
+	node19 [label="Type : real"]
+	node18 -> node19
+	node20 [label="Id : p2"]
+	node18 -> node20
+	node21 [label=BeginMain]
+	node1 -> node21
+	node22 [label=FuncCall]
+	node21 -> node22
+	node23 [label="Id : readln"]
+	node22 -> node23
+	node24 [label=Args]
+	node22 -> node24
+	node25 [label="Id : a1"]
+	node24 -> node25
+	node26 [label="Id : b1"]
+	node24 -> node26
+	node27 [label="Id : a2"]
+	node24 -> node27
+	node28 [label="Id : b2"]
+	node24 -> node28
+	node29 [label=Assign]
+	node21 -> node29
+	node30 [label="Id : p1"]
+	node29 -> node30
+	node31 [label="BinOp : /"]
+	node29 -> node31
+	node32 [label="BinOp : *"]
+	node31 -> node32
+	node33 [label="Id : a1"]
+	node32 -> node33
+	node34 [label="Id : b1"]
+	node32 -> node34
+	node35 [label="Int : 2"]
+	node31 -> node35
+	node36 [label=Assign]
+	node21 -> node36
+	node37 [label="Id : p2"]
+	node36 -> node37
+	node38 [label="BinOp : /"]
+	node36 -> node38
+	node39 [label="BinOp : *"]
+	node38 -> node39
+	node40 [label="Id : a2"]
+	node39 -> node40
+	node41 [label="Id : b2"]
+	node39 -> node41
+	node42 [label="Int : 2"]
+	node38 -> node42
+	node43 [label=If]
+	node21 -> node43
+	node44 [label="BinOp : >"]
+	node43 -> node44
+	node45 [label="Id : p1"]
+	node44 -> node45
+	node46 [label="Id : p2"]
+	node44 -> node46
+	node47 [label=Block]
+	node43 -> node47
+	node48 [label=FuncCall]
+	node47 -> node48
+	node49 [label="Id : write"]
+	node48 -> node49
+	node50 [label=Args]
+	node48 -> node50
+	node51 [label="Char : 1"]
+	node50 -> node51
+	node52 [label=Block]
+	node43 -> node52
+	node53 [label=If]
+	node52 -> node53
+	node54 [label="BinOp : <"]
+	node53 -> node54
+	node55 [label="Id : p1"]
+	node54 -> node55
+	node56 [label="Id : p2"]
+	node54 -> node56
+	node57 [label=Block]
+	node53 -> node57
+	node58 [label=FuncCall]
+	node57 -> node58
+	node59 [label="Id : write"]
+	node58 -> node59
+	node60 [label=Args]
+	node58 -> node60
+	node61 [label="Char : 2"]
+	node60 -> node61
+	node62 [label=Block]
+	node53 -> node62
+	node63 [label=FuncCall]
+	node62 -> node63
+	node64 [label="Id : write"]
+	node63 -> node64
+	node65 [label=Args]
+	node63 -> node65
+	node66 [label="Char : 0"]
+	node65 -> node66
+}
