@@ -1,5 +1,9 @@
 # Programski prevodioci - Projekat
 
+
+![architecture](https://user-images.githubusercontent.com/47822683/135255124-9925909c-3590-4e0c-9530-4c9c05eb4c08.png)
+
+
 Cilj projektnog zadatka je individualno implementirati interpreter i generator koda za Pascal programski jezik. Potrebno je generisati kod u C programskom jeziku koji ne sme sadržati sintaksne greške. Projekat se sastoji iz dve faze. Prva faza podrazumeva generisanje apstraktnog sintaksnog stabla, dok je druga faza posvećena implementaciji interpretera i generatora koda.
 
 ## [Prva faza] Potrebno je podržati sledeće celine:
